@@ -1,9 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 name: Continuous Integration and Deployment
 
 on:
 =======
 >>>>>>> d4a28ab4d8efa24c54acc6672c01056f0f805d89
+=======
+name: Continuous Integration and Deployment
+
+on:
+>>>>>>> 6d726728ce2f75b89df20f6c896ed8d129cb6aff
   push:
     branches: [ main ]
   pull_request:
@@ -20,7 +26,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.11.2' # Replace with the Python version you're using
+        python-version: '3.x' # Replace with the Python version you're using
 
     - name: Install dependencies
       run: |
@@ -31,4 +37,3 @@ jobs:
       env:
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
       run: python bot.py
-
