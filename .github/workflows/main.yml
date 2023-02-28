@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 name: Continuous Integration and Deployment
 
 on:
-=======
->>>>>>> d4a28ab4d8efa24c54acc6672c01056f0f805d89
-=======
-name: Continuous Integration and Deployment
-
-on:
->>>>>>> 6d726728ce2f75b89df20f6c896ed8d129cb6aff
   push:
     branches: [ main ]
   pull_request:
