@@ -1,4 +1,4 @@
-name: Continuous Integration and Deployment
+name: Python Application
 
 on:
   push:
@@ -8,23 +8,23 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout the repo
-      uses: actions/checkout@v2
-      
-    - name: Set up Python
+    - uses: actions/checkout@v2
+
+    - name: Set up Python 3.11.2
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x' # Replace with the Python version you're using
+        python-version: '3.11.2'
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
-      
+        pip install -r ./requirements.txt
+
     - name: Run bot
       env:
-        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        BOT_TOKEN: ${{MTA3ODgxMjQ5OTE2MTM5OTM5Ng.GFhPt5.ncc-v5SMNs_Rujq8xrASGbeodzi3XRmIaXfaOc}}
       run: python bot.py
