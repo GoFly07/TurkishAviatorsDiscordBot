@@ -17,9 +17,6 @@ intents.guilds = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 
-@bot.event
-async def on_ready():
-    print(f'{bot.user} adıyla giriş yapıldı')
 
 
 @bot.event
