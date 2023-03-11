@@ -85,7 +85,7 @@ async def timeout(ctx, member: discord.Member, time: int, *, reason=None):
                     print(f'An HTTP error {e.resp.status} occurred: {e.content}')
                 await asyncio.sleep(10)
 
-        client.run('MTA3ODgxMjQ5OTE2MTM5OTM5Ng.G95S4L.-O7mG-nejgfogYMV-i1XK54xtSCI-24noCXaR4')
+        client.run('BOT_TOKEN')
 
 
-bot.run('MTA3ODgxMjQ5OTE2MTM5OTM5Ng.G95S4L.-O7mG-nejgfogYMV-i1XK54xtSCI-24noCXaR4')
+bot.run('BOT_TOKEN')
